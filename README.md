@@ -8,7 +8,11 @@ Start by pulling the git project
 git clone https://github.com/hoeghh/CentOS66_JBoss711.git
 ```
 This will download the Dockerfile and userfile to your harddrive.
-Now you need to build the container from the Dockerfile:
+Enter the directory
+```
+cd CentOS66_JBoss711
+```
+And now you can to build the container from the Dockerfile:
 ```
 docker build -t jboss7 .
 ```
