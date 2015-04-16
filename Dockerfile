@@ -25,8 +25,7 @@ ENV JAVA_HOME /usr/lib/jvm/java
 ENV JBOSS_HOME /opt/jboss/jboss-as-7.1.1.Final
 
 #Get JBoss 7.1.1 from Jboss.org and unzip it
-RUN wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip
-RUN unzip jboss-as-7.1.1.Final.zip
+RUN wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip && unzip jboss-as-7.1.1.Final.zip && rm -f jboss-as-7.1.1.Final.zip
 
 RUN sed -i -r 's/jboss.bind.address.management:127.0.0.1/jboss.bind.address.management:0.0.0.0/' /opt/jboss/jboss-as-7.1.1.Final/standalone/configuration/standalone.xml
 
