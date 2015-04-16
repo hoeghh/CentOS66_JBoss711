@@ -28,4 +28,4 @@ You can find the id of the container by running the following command, once the 
 ```
 docker ps
 ```
-Now navigate to [http://localhost:8080](http://localhost:8080)  and see the JBoss 7 welcome page. If you have created an user, you can click the Administration Console link, or click [here](http://localhost:8080).
+Now navigate to [http://localhost:8080](http://localhost:8080)  and see the JBoss 7 welcome page. If you have created an user, you can click the Administration Console link, or click [here](http://localhost:9990).
