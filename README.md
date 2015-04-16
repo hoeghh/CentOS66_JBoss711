@@ -22,7 +22,7 @@ The -d option will tell docker to run the image in the background.
 Once you have build the container and started it you can add a user by running :
 
 ```
-docker exec -it [docker-id] /opt/jboss/jboss-as-7.1.1.Final/bin/add-user.sh
+docker exec -it [container-id] /opt/jboss/jboss-as-7.1.1.Final/bin/add-user.sh
 ```
 You can find the id of the container by running the following command, once the container has started.
 ```
