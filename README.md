@@ -62,6 +62,13 @@ EXPOSE 8080 9990
 # Set the default command to run on boot
 # # This will boot JBoss in the standalone mode and bind to all interface
 CMD ["/opt/jboss/jboss-as-7.1.1.Final/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement 0.0.0.0"]
+```
+Once you have build the container and started it you can add a user by running :
 
 ```
->Important! : I have created a user called admin, with the password 1234 in the image. Its for testing only. Remove the user when done in the file /opt/jboss/jboss-as-7.1.1.Final/standalone/configuration/mgmt-users.properties
+docker exec -it [docker-id] /opt/jboss/jboss-as-7.1.1.Final/bin/add-user.sh
+```
+You can find the id of the container by running the following command, once the container has started.
+```
+docker ps
+```
