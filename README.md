@@ -5,7 +5,7 @@ Here i'll try and show how this images could be startet and how to communicate w
 
 Start by pulling the git project
 ```
-https://github.com/hoeghh/CentOS66_JBoss711.git
+git clone https://github.com/hoeghh/CentOS66_JBoss711.git
 ```
 This will download the Dockerfile and userfile to your harddrive.
 Now you need to build the container from the Dockerfile:
@@ -28,3 +28,4 @@ You can find the id of the container by running the following command, once the 
 ```
 docker ps
 ```
+Now navigate to [http://localhost:8080](http://localhost:8080)  and see the JBoss 7 welcome page. If you have created an user, you can click the Administration Console link, or click [here](http://localhost:8080).
