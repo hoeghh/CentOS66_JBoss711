@@ -21,7 +21,7 @@ Now you have an image and a container. Now start the container by:
 docker run -d -p 8080:8080 -p 9990:9990 jboss7
 ```
 
-The -d option will tell docker to run the image in the background.
+The -d option will tell docker to run the container in the background.
 
 You can find the id of the container by running the following command, once the container has started.
 ```
